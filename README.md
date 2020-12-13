@@ -1,2 +1,7 @@
 # Bogorodsk-bread-accounting
-Sollution for calculating daily consumption
+This program is designed for calculating daily consumption of ingredients for a bakery.
+
+Excel file "prices" is using as a database of prices of ingredients and products. 
+User can change prices both in this file and in the program.
+
+Excel file "table for test" is for a test this solution.
