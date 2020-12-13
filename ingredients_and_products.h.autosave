@@ -1,0 +1,8 @@
+#ifndef INGREDIENTS_AND_PRODUCTS_H
+#define INGREDIENTS_AND_PRODUCTS_H
+#include "ingredient.h"
+#include "product.h"
+
+
+
+#endif // INGREDIENTS_AND_PRODUCTS_H
