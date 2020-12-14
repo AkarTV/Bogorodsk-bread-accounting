@@ -36,7 +36,10 @@ void MainWindow::on_pushButton_clicked()
 {
     QString file;
     QFileDialog open_file;
-    file = open_file.getOpenFileName(0, "Выберите файл", "C:/Users/Tolga/Desktop", "*.xlsx *.xlsm");
+    QString username;
+    if(qgetenv("USER").isEmpty())
+        username = qgetenv("USERNAME");
+    file = open_file.getOpenFileName(0, "Выберите файл", QString("C:/Users/%1/Desktop").arg(username), "*.xlsx *.xlsm");
     if(file.isNull())
         return;
     else

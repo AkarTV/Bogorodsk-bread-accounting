@@ -31,11 +31,12 @@ void Product::calculate(int number)
 {
     total_price = price*number;
     all_total_price += total_price;
-    QMap<ingredient*, double>::iterator i;
-    for(i = ingredients_with_counts.begin(); i != ingredients_with_counts.end(); ++i)
+    QMap<ingredient*, double>::const_iterator i = ingredients_with_counts.constBegin();
+    while(i != ingredients_with_counts.constEnd())
     {
-        i.value()*=number;
+        ingredients_with_counts[i.key()] = i.value()*number;
         i.key()->take_total_count_for_product(i.value());
+        ++i;
     }
     for(int i = 0; i<ingredients_with_counts.size(); ++i)
     {
