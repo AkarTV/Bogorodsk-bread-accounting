@@ -19,13 +19,12 @@ Excel file "table for test" is for a test this solution.
 <img src = "/images/on_start.png" width = "500">
 <p> Report after excel table parcing: </p>
 <img src = "/images/report.png" width ="500">
-<p> Assembled PDF file which user can save ans print: </p>
-<img src = "/images/pdf_report.png" width = "500">
+<a href="/report_example/Расход за 15 декабря 2020 г..pdf">Example of assembled PDF file</a>
 
 <hr>
 
-To work with Excel files was used the library QXlsx from QtExcel developer.
-Link: https://github.com/QtExcel/QXlsx
+<h2>Third party:</h2>
+To work with Excel files was used the library QXlsx from QtExcel developer. Link: https://github.com/QtExcel/QXlsx
 
 This library is licensed under the MIT License:
 
